@@ -9,7 +9,7 @@ A platform to learn and share cool recipes.
 * 150109009 - Ceren Birinci
 
 ---
-
+### Summary
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Our project Eatify will be an android application for people who loves to cook.
 Eatify is a platform which will provide its users to create and share their recipes and also they can view
 other users' profiles and recipes.
