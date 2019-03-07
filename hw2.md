@@ -24,5 +24,5 @@ As a solution, we are planning to introduce our users to different simplicity le
 ------------------
 ### SW Process Model
 As for SW process model, we are going to use an iterative process model since as all know it is the best process ever while developing software.
-Since one of group members has full of acknowledge and experience about one of the agile methods which is *Scrum*, we will be using *Scrum* for our project development process.
+Since one of group members has full knowledge and experience about one of the agile methods which is *Scrum*, we will be using *Scrum* for our project development process.
 It gives us flexibility against some risks of change and we can easily adapt after applying new requirements or small requests.
