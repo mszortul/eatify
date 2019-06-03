@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpScreen">
+
+    <com.jgabrielfreitas.core.BlurImageView
+        android:id="@+id/BlurImageView_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/serbe_1" />
+
+
+
+    <EditText
+        android:id="@+id/et_11"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/user"
+        android:layout_marginTop="170dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:layout_marginLeft="50dp"
+        android:textColorHint="#000000"/>
+
+    <EditText
+        android:id="@+id/et_22"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/mail"
+        android:ems="10"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/et_11"
+        android:textColorHint="#000000"/>
+
+
+    <EditText
+        android:id="@+id/et_33"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/lock"
+        android:ems="20"
+        android:hint="Password"
+        android:inputType="numberPassword"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/et_22"
+        android:textColorHint="#000000"/>
+
+
+    <EditText
+        android:id="@+id/et_44"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/lock"
+        android:ems="20"
+        android:hint="Confirm"
+        android:inputType="numberPassword"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/et_33"
+        android:textColorHint="#000000"/>
+
+
+    <Button
+        android:id="@+id/btn_11"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/et_44"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@android:dimen/app_icon_size"
+        android:text="Sign Up"/>
+
+
+
+</RelativeLayout>
