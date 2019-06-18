@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:clickable="true"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:id="@+id/linear1">
+
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/ss_1" />
+
+            <EditText
+                android:id="@+id/usernameEditText"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_person_20"
+                android:gravity="center_vertical"
+                android:hint=" Kullanıcı adı"
+                android:textSize="17sp" />
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:inputType="textEmailAddress"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_email_20"
+                android:gravity="center_vertical"
+                android:hint=" E-posta"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+            <EditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_lock_20"
+                android:gravity="center_vertical"
+                android:hint=" Şifre"
+                android:inputType="textPassword"
+                android:textSize="17sp" />
+
+
+            <EditText
+                android:id="@+id/passwordConfirmEditText"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:drawableLeft="@drawable/ic_check_20"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+                android:hint=" Şifre onayla"
+                android:textSize="17sp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true">
+
+            <Button
+                android:id="@+id/midButton"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30dp"
+                android:background="@color/greenLight"
+                android:text="GİRİŞ"
+                android:textColor="@color/color_white"
+                android:onClick="buttonClick"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/bottomButton"
+        android:onClick="switchContext"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/redLight2"
+        android:text="KAYDOL"
+        android:textColor="@color/color_white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginRight="30dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CommentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+
+        <ScrollView
+            android:id="@+id/commentScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="90"
+            android:clickable="true"
+            android:focusableInTouchMode="true">
+
+            <LinearLayout
+                android:id="@+id/commentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:clickable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:minHeight="50dp">
+
+            <EditText
+                android:id="@+id/commentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:drawableRight="@drawable/ic_comment_24"
+                android:hint="Make a comment!"
+
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="redCol">#D81B61</color>
+    <color name="redNew">#E5050B</color>
+    <color name="redLight">#FF6E64</color>
+    <color name="redDark">#D10800</color>
+    <color name="greenLight">#75CA6F</color>
+    <color name="redLight2">#EC948C</color>
+
+    <color name="rowBackground">#F0F0F0</color>
+    <color name="profileImageBackground">#909090</color>
+
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_pink">#DFAAAA</color>
+    <color name="black">#000000</color>
+    <color name="light_grey">#e4e4e4</color>
+    <color name="grey">#8b8b8b</color>
+    <color name="dark_grey">#696969</color>
+    <color name="white">#FFFFFF</color>
+    <color name="light_black">#4F4F4F</color>
+</resources>

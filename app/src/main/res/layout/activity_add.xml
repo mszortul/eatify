@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <EditText
+                android:id="@+id/recipeHeadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/recipeHeadlineHint"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/recipeEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="@string/recipeEntryHint" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="KATEGORİ"
+                    android:textColor="@color/colorAccent" />
+
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/numberOfPerson"
+                    android:textColor="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/numberOfPersonInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/prepTime"
+                    android:textColor="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/prepTimeInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:hint="1 saat" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/cookTime"
+                    android:textColor="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/cookTimeInput"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:hint="30 dakika" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Malzemeler"
+                android:textColor="@color/cardview_dark_background" />
+
+            <com.example.eatify1506.NonScrollListView
+                android:id="@+id/ingListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+            </com.example.eatify1506.NonScrollListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:weightSum="100">
+
+
+                <EditText
+                    android:id="@+id/matInput"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="75"
+                    android:layout_marginRight="20dp"
+                    android:hint="1 adet yumurta"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/ingAddButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:onClick="addIng"
+                    android:text="EKLE"
+                    android:layout_weight="25"
+                    android:background="@color/colorAccent"
+                    android:textColor="@color/white"
+                    android:layout_margin="5dp"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="40dp"
+                android:onClick="continueStep2"
+                android:text="DEVAM ET"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

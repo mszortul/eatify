@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/back_3" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" />
+
+                        <ImageView
+                            android:id="@+id/reportProfileFlag"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_flag_red"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/profileUserImage"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/test_name" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/profileRecipeNumber"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center"
+                                                android:text="50"
+                                                android:textColor="@color/white"
+                                                android:textSize="18sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="sans-serif-light"
+                                                android:gravity="center"
+                                                android:text="Tarif"
+                                                android:textColor="@color/white"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/followerLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/profileFollowerNumber"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center"
+                                                android:text="15"
+                                                android:textColor="@color/white"
+                                                android:textSize="18sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="sans-serif-light"
+                                                android:gravity="center"
+                                                android:text="Takipçi"
+                                                android:textColor="@color/white"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                                <RelativeLayout
+                                    android:id="@+id/followingLayout"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true">
+
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/profileFollowingNumber"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:gravity="center"
+                                                android:text="4"
+                                                android:textColor="@color/white"
+                                                android:textSize="18sp" />
+
+                                            <TextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:fontFamily="sans-serif-light"
+                                                android:gravity="center"
+                                                android:text="Takip"
+                                                android:textColor="@color/white"
+                                                android:textSize="14sp" />
+                                        </LinearLayout>
+
+                                    </LinearLayout>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/profileFollowButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="20dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginRight="20dp"
+                                android:background="@color/colorAccent"
+                                android:text="Takip et"
+                                android:textAllCaps="false"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/profileUsername"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="40dp"
+                        android:text="Kullanıcı Adı"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/profileRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

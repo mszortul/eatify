@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Add2Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Yapılış Adımları"
+                android:textSize="20sp"
+                android:textColor="@color/cardview_dark_background" />
+
+            <com.example.eatify1506.NonScrollListView
+                android:id="@+id/stepListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp">
+            </com.example.eatify1506.NonScrollListView>
+
+            <EditText
+                android:id="@+id/addStepInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:drawableEnd="@drawable/ic_add_black_24dp"
+                android:hint="Yapılış adımı ekle" />
+
+            <EditText
+                android:id="@+id/suggestionInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Püf noktaları ve önerileriniz"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="continueStep3"
+                android:textColor="@color/white"
+                android:text="DEVAM ET"
+                android:background="@color/colorAccent"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

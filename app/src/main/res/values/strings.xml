@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Eatify1506</string>
+
+    <string name="passwordHint">Your password</string>
+    <string name="usernameHint">Your username</string>
+    <string name="loginButton">LOG IN</string>
+    <string name="signupInfo">Don\'t have an account?</string>
+    <string name="signupClick">Create new one!</string>
+    <string name="signupButton">SIGN UP</string>
+    <string name="loginInfo">Already have an account?</string>
+    <string name="loginClick">Log in!</string>
+    <string name="title_activity_add">AddActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="recipeHeadlineHint">Tarifin başlığını girin</string>
+    <string name="recipeEntryHint">Tarifin ne kadar lezzetli olduğundan bahsettiğiniz giriş metnini yazın.</string>
+    <string name="numberOfPerson">KAÇ KİŞİLİK</string>
+    <string name="prepTime">HAZIRLAMA</string>
+    <string name="cookTime">PİŞİRME</string>
+    <string name="sampleText5Sent">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Id volutpat lacus laoreet non. Aliquam vestibulum morbi blandit cursus risus at ultrices. Fames ac turpis egestas integer eget aliquet nibh praesent tristique. Non curabitur gravida arcu ac tortor dignissim convallis.</string>
+
+    
+    <string-array name="str1" >
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>item4</item>
+
+    </string-array>
+</resources>

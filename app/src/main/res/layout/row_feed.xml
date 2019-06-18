@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:id="@+id/recipeImg"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bes_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/recipeImg">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/userImg"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/test_name" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@+id/userImg"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/recipeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Tarif Adı"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/recipeTimeRowFeed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_circle_grey_4"
+                        android:text=" 3h"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_gravity="bottom"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:text="Kullanıcı Adı"
+                    android:textColor="@color/dark_grey"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="10dp">
+
+
+
+                <TextView
+                    android:id="@+id/commentNumberRowFeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 0"
+                    android:drawableLeft="@drawable/ic_comment_row_feed"
+                    android:layout_marginRight="7dp"
+                    android:layout_gravity="center_vertical"/>
+                <TextView
+                    android:id="@+id/bookmarkNumberRowFeed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:drawableLeft="@drawable/ic_bookmark_grey_26"
+                    android:layout_gravity="center_vertical"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
