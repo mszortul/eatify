@@ -1,5 +1,4 @@
-# cse3044spring2019p1_mzortul_ayilmaz_cbirinci
-
+### cse3044 Term Project
 
 Eatify android app
 
